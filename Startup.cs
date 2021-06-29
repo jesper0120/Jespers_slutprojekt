@@ -38,12 +38,14 @@ namespace Jespers_slutprojekt
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
 
             services.AddSingleton<LanguageService>();
 
             services.AddLocalization(options => options.ResourcesPath = "Resources");
+            // services.AddLocalization(options => options.ResourcesPath = "SharedResource"); EDITED 2021-06-28
 
             services.AddMvc()
                 .AddViewLocalization()

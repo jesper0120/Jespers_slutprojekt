@@ -51,6 +51,58 @@ button.accept-policy {
   line-height: inherit;
 }
 
+/* added BEGIN 2021-06-28 */
+i{
+
+}
+.dropdownbutton {
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    /* 
+    font-size: 20px; 
+    font-weight: bolder;          
+    padding: 10px;
+    */
+}
+/* REMOVED 2021-06-28     position: absolute; */
+.sl-nav{
+    display: inline-block;
+    position: relative;
+}
+
+
+.sl-nav:hover .triangle{
+    display: inline-block;
+}
+
+.navbar-wrapper {
+    align-items: center;
+}
+
+.triangle{
+    top: 100%;
+    left: 0%;
+    position: absolute; 
+    background-color: azure;
+    width: 180px;
+    display: none;
+}
+.triangle a{
+    display: block; 
+    color: blueviolet; 
+    text-decoration: none;
+    padding: 10px;
+}
+
+    .triangle a:hover {
+        background-color: blueviolet;
+        color: white;
+    }
+
+/* added END 2021-06-28 */
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -69,3 +121,45 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}  
+
+nav#nav-wrapper li.sl-nav a {
+    padding-right: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+nav#nav-wrapper li.sl-nav:after {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "FontAwesome";
+    content: "\f107";
+    font-size: 16px;
+}
+
+nav#nav-wrapper a {
+    display: block;
+    padding: 20px;
+    color: #555;
+    text-decoration: none;
+}
+
+nav#nav-wrapper > ul > li {
+    display: inline;
+    float: left;
+}
+
+nav#nav-wrapper ul ul {
+    display: none;
+}
+
+ */

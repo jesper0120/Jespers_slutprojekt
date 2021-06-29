@@ -6,6 +6,12 @@
     <title>@ViewData["Title"] - Jespers_slutprojekt</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- Added 2021-06-28 because it was missing in https://www.youtube.com/watch?v=ITsmlr8UbGU -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
 </head>
 
 @inject LanguageService language
@@ -37,24 +43,39 @@
                     <partial name="_LoginPartial" />
                 </div>
 
-                <div class="nav-wrapper">
+                <div class="navbar-wrapper">
                     <div class="sl-nav">
-                        Language:
                         <ul>
-                            <li>
-                                <b>English</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                <div class="triangle"></div>
-                                <ul class="language">
-                                    <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-GB" class="nav-link"><i class="flag-icon flag-icon-gb"></i> English</a></li>
+                            <li>                                
+                                <!-- added BEGIN 2021-06-28 -->
+                                <button type="button" class="dropdownbutton">
+                                    <!-- added END 2021-06-28 -->
+                                    <b>Language:</b>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="triangle">
+                                    <ul class="language">
+                                        <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-GB" class="nav-link"><i class="flag-icon flag-icon-gb"></i> English</a></li>
 
-                                    <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="sv-SE" class="nav-link"><i class="flag-icon flag-icon-sv"></i> Svenska</a></li>
-                                </ul>
+                                        <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="sv-SE" class="nav-link"><i class="flag-icon flag-icon-sv"></i> Svenska</a></li>
+                                    </ul>
+                                </div>
 
                             </li>
 
                         </ul>
 
                     </div>
+                    <!--
+                    Dropdown arrow already exists https://www.youtube.com/watch?v=3C2kTUJlVSc    
+                    
+                    <li class="has-submenu">
+                        <a href="#">About</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    -->
 
                 </div>
             </div>
@@ -68,7 +89,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - Jespers_slutprojekt - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - greencoaching.net - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
