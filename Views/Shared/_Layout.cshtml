@@ -11,7 +11,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
 </head>
 
 @inject LanguageService language
@@ -45,39 +45,21 @@
 
                 <div class="navbar-wrapper">
                     <div class="sl-nav">
-                        <ul>
-                            <li>                                
-                                <!-- added BEGIN 2021-06-28 -->
-                                <button type="button" class="dropdownbutton">
-                                    <!-- added END 2021-06-28 -->
-                                    <b>Language:</b>
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </button>
-                                <div class="triangle">
-                                    <ul class="language">
-                                        <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-GB" class="nav-link"><i class="flag-icon flag-icon-gb"></i> English</a></li>
-
-                                        <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="sv-SE" class="nav-link"><i class="flag-icon flag-icon-sv"></i> Svenska</a></li>
-                                    </ul>
-                                </div>
-
-                            </li>
-
-                        </ul>
-
+                        <!-- added BEGIN 2021-06-28 -->
+                        <button type="button" class="dropdownbutton">
+                            <!-- added END 2021-06-28 -->
+                            <b>Language:</b>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="triangle">
+                            <ul class="language">
+                                <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-GB" class="nav-link"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+                                <li><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="sv-SE" class="nav-link"><span class="flag-icon flag-icon-sv"></span> Svenska</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <!--
-                    Dropdown arrow already exists https://www.youtube.com/watch?v=3C2kTUJlVSc    
-                    
-                    <li class="has-submenu">
-                        <a href="#">About</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Testimonials</a></li>
-                        </ul>
-                    </li>
-                    -->
-
                 </div>
+                <!-- Dropdown arrow already exists https://www.youtube.com/watch?v=3C2kTUJlVSc  -->
             </div>
         </nav>
     </header>
