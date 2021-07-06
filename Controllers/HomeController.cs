@@ -34,6 +34,32 @@ namespace Jespers_slutprojekt.Controllers
             return View();
         }
 
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        /*
+        public IActionResult Access_Consciousness()
+        {
+            return View();
+        }
+        */
+
+        public IActionResult Access()
+        {
+            return View();
+        }
+
+        public IActionResult Quotes()
+        {
+            return View();
+        }
+
+        public IActionResult Treatments()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

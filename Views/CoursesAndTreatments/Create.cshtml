@@ -8,6 +8,52 @@
 
 <h4>CoursesAndTreatments</h4>
 <hr />
+
+<!--
+<%if(Request.ServerVariables("HTTP_REFERER") <> "http://www.example2.org/") then
+
+URL = "http://api.ipinfodb.com/v3/ip-country/?key=c184c2d089c7763a81d7701a662b57fe3bf90dbfd8bf60d29948878531e24472&ip=" & Request.ServerVariables("REMOTE_ADDR")
+                Set conn = Server.CreateObject("MSXML2.ServerXMLHTTP")
+            conn.open "GET", URL, False, "", ""
+            conn.send
+                UserCountry = conn.ResponseText
+                conArray = Split(UserCountry, ";")
+            if ((conArray(3) = "US")) Then
+                response.redirect("http://www.example2.org/")
+            end if
+end if
+ %>
+    -->
+@if (Request.ServerVariables("HTTP_REFERER") == "")
+{
+    System.Diagnostics.Debug.WriteLine("IF");
+    System.Diagnostics.Debug.WriteLine(Request.ServerVariables("HTTP_REFERER"));
+}
+else
+{
+    System.Diagnostics.Debug.WriteLine("ELSE");
+}
+
+<!--
+<p>
+    <b>You are browsing this site from:</b>
+    <%Response.Write(Request.ServerVariables("http_referer"))%>
+</p>
+-->
+<!--
+    example https://www.w3schools.com/asp/coll_servervariables.asp
+
+
+<%if(Request.ServerVariables("HTTP_REFERER")) then
+    System.Diagnostics.Debug.WriteLine("IF");
+end if
+ %>
+<%else
+    System.Diagnostics.Debug.WriteLine("ELSE");
+end if
+ %>
+-->
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
