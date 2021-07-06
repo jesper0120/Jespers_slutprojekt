@@ -23,8 +23,8 @@ URL = "http://api.ipinfodb.com/v3/ip-country/?key=c184c2d089c7763a81d7701a662b57
             end if
 end if
  %>
-    -->
-@if (Request.ServerVariables("HTTP_REFERER") == "")
+
+if (Request.ServerVariables("HTTP_REFERER") == "")
 {
     System.Diagnostics.Debug.WriteLine("IF");
     System.Diagnostics.Debug.WriteLine(Request.ServerVariables("HTTP_REFERER"));
@@ -33,7 +33,7 @@ else
 {
     System.Diagnostics.Debug.WriteLine("ELSE");
 }
-
+-->
 <!--
 <p>
     <b>You are browsing this site from:</b>
