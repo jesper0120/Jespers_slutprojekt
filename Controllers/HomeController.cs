@@ -1,4 +1,8 @@
-﻿using Jespers_slutprojekt.Models;
+﻿// ONLY NEEDED IF I RE-ADD THE VISUAL DHTMLX CALENDAR
+// REMOVED DHTMLX.Scheduler.NET FROM PACKAGES ON 2021-07-12
+// http://scheduler-net.com/docs/appointment-calendar-asp-mvc5.html
+// using DHTMLX.Scheduler;
+using Jespers_slutprojekt.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
@@ -31,6 +35,12 @@ namespace Jespers_slutprojekt.Controllers
 
         public IActionResult Index()
         {
+            /* ADDED 2021-07-07 BEGIN
+            DHXScheduler scheduler = new DHXScheduler();            
+            scheduler.Skin = DHXScheduler.Skins.Flat;
+            return View(scheduler);
+            
+            ADDED 2021-07-07 END */
             return View();
         }
 

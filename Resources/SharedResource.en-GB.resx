@@ -120,8 +120,32 @@
   <data name="access" xml:space="preserve">
     <value>Access Consciousness</value>
   </data>
+  <data name="accessBars" xml:space="preserve">
+    <value>Do you want a change that changes your whole life in just one session? In the Access Bars treatment, the worst thing you can get is a good massage and the best thing you can experience is that your whole life takes the direction you wanted or even better a direction towards what your higher self strives for. Access Bars is a treatment where 32 different points (or bars) are held by the therapist in different combinations. The points can help the client with relationships, money, happiness and sadness, peace and tranquility, aging, hopes and dreams, control, the body, sex, as well as communication etc. Bars help you electromagnetically release old patterns and limitations you have created based on your fixed points of view. Worth knowing may be that when Bars run on children, it can cause their grades to dramatically improve. Do you want help with sleeping better? Run your bars.</value>
+  </data>
+  <data name="accessMTVSS" xml:space="preserve">
+    <value>Access MTVSS is a hands-on (hands-on-body) treatment that involves restoring the cells to their origin. That is, if the skin and or the tissue and muscles under the skin have suffered some damage, e.g. inflammation, burns, wear and tear, etc., then this treatment can help the body's own healing back to its origin.</value>
+  </data>
+  <data name="bookings" xml:space="preserve">
+    <value>Bookings</value>
+  </data>
+  <data name="bookTreatment" xml:space="preserve">
+    <value>Book a treatment.</value>
+  </data>
   <data name="contact" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="coursesAndTreatments" xml:space="preserve">
+    <value>Courses And Treatments</value>
+  </data>
+  <data name="createBooking" xml:space="preserve">
+    <value>Book a treatment or class</value>
+  </data>
+  <data name="exciting" xml:space="preserve">
+    <value>Does that sound exciting? What would happen if you book an appointment?</value>
+  </data>
+  <data name="mtReview" xml:space="preserve">
+    <value>After days, maybe weeks of fatigue, Jesper came to visit :-), we were going to change Bars, but for some strange reason he started to do a lot of clearing processes on me about the fatigue. Does it belong to me? Someone else's? Or maybe it's something else's? I do not really remember everything, but with the finesse and sensitivity that Jesper possesses, he found the right words and they went straight into "right on spot" as it is called! Right on the spot !. We changed Bars and parted. The next day I went away with a couple of friends, the tiredness blown away, my self-esteem strengthened and life so much easier! After that, I have not felt the chronic fatigue that I have been carrying for several years.</value>
   </data>
   <data name="quotes" xml:space="preserve">
     <value>Quotes</value>
@@ -131,6 +155,9 @@
   </data>
   <data name="welcome" xml:space="preserve">
     <value>Welcome</value>
+  </data>
+  <data name="whatHappened" xml:space="preserve">
+    <value>What happened for you during the treatment and after you received Acccess Bars:</value>
   </data>
   <data name="worldpeace" xml:space="preserve">
     <value>World Peace</value>

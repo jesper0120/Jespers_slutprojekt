@@ -19,12 +19,6 @@
     @Html.TextBox("12/12/2012", String.Format("{0:d}"), new { @class = "datefield", type = "date" })
 *@
 
-@*
-    <script>
-        @{await document.getElementById("todays-date").innerHTML = Date();}
-    </script>
-*@
-
 <!--
 <%if(Request.ServerVariables("HTTP_REFERER") <> "http://www.example2.org/") then
 
@@ -132,36 +126,10 @@ end if
             </div>
             <div class="form-group">
                 <label asp-for="SignedUpDate" class="control-label"></label>
-                @*
-                    <input asp-for="SignedUpDate" class="form-control" />
-                    <input asp-for="SignedUpDate" class="form-control" type='date' id='SignedUpDate' value='<?php echo date(' Y-m-d');?>'>
-                    <p>Date/Time: <span id="todays-date"></span></p>
-                    strftime('%Y-%m-%d', time())  DOES NOT SEEM TO WORK TO ADD.
-                *@
-                <input asp-for="SignedUpDate" time datetime="YYYY-MM-DD" value="@DateTime.Today" type="datetime" class="form-control" strftime('%Y-%m-%d', time()) />
+                <input asp-for="SignedUpDate" class="form-control" />
                 <span asp-validation-for="SignedUpDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="TreatmentDate" class="control-label"></label>
-                <input asp-for="TreatmentDate" class="form-control" data-val="true" data-val-required="Date is required"
-                       id="DatePicker" name="TreatmentDate" type="date" value="1/11/1989" />
-                <span asp-validation-for="TreatmentDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TreatmentTime" class="control-label"></label>
-                <input asp-for="TreatmentTime" class="form-control" />
-                <span asp-validation-for="TreatmentTime" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TreatmentMethod" class="control-label"></label>
-                <input asp-for="TreatmentMethod" class="form-control" />
-                <span asp-validation-for="TreatmentMethod" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TreatmentPrice" class="control-label"></label>
-                <input asp-for="TreatmentPrice" class="form-control" />
-                <span asp-validation-for="TreatmentPrice" class="text-danger"></span>
-            </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -175,5 +143,4 @@ end if
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    @* @{var dt = new Date(); document.getElementById("todays-date").innerHTML = dt.toLocaleString();} *@
 }

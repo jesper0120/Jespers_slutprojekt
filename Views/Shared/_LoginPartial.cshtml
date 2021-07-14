@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
+@inject LanguageService language
 
 <ul class="navbar-nav">
     @if (SignInManager.IsSignedIn(User))
@@ -13,6 +14,14 @@
                 <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
             </form>
         </li>
+        @* ADDED BEGIN 2021-07-13*@
+        @if (User.IsInRole("Administrator"))
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Identity" asp-controller="CoursesAndTreatments" asp-action="Index">@language.Getkey("bookings")</a>
+            </li>
+        }
+        @* ADDED EN 2021-07-13*@
     }
     else
     {

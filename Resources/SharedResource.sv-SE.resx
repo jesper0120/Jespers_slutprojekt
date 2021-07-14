@@ -120,8 +120,32 @@
   <data name="access" xml:space="preserve">
     <value>Access Consciousness</value>
   </data>
+  <data name="accessBars" xml:space="preserve">
+    <value>Vill du få en förändring som ändrar hela ditt liv på enbart en session?  I Access Bars-behandlingen är det sämsta du kan få en god massage och det bästa du kan uppleva är att hela ditt liv tar den riktning du önskat eller ännu bättre en riktning mot det som ditt högre jag strävar efter.  Access Bars är en behandling där 32 olika punkter (eller bjälkar) hålls av terapeuten i olika kombinationer.  Punkterna kan hjälpa klienten med relationer, pengar, lycka och ledsamhet, lugn och fridsamhet, åldrande, hopp och drömmar, kontroll, kroppen, sex, samt kommunikation etc.  Bars hjälper dig att elektromagnetiskt frigöra gamla mönster och begränsningar du skapat baserat på dina fixerade åsikter.  Värt att känna till kan vara att när Bars körs på barn kan det få deras betyg att dramatiskt förbättras.  Vill du få hjälp med att sova bättre?  Kör dina bars.</value>
+  </data>
+  <data name="accessMTVSS" xml:space="preserve">
+    <value>Access MTVSS är en behandling som är en hands-on (händerna-på-kroppen) behandling som går ut på att återställa cellerna till dess ursprung. Dvs har huden och eller vävnaden och musklerna under huden fått någon skada, t.ex. inflammation, brännskada, förslitning etc, så kan denna behandling hjälpa kroppens egen läkning tillbaka till ursprunget.</value>
+  </data>
+  <data name="bookings" xml:space="preserve">
+    <value>Bokningar</value>
+  </data>
+  <data name="bookTreatment" xml:space="preserve">
+    <value>Boka en behandling.</value>
+  </data>
   <data name="contact" xml:space="preserve">
     <value>Kontakt</value>
+  </data>
+  <data name="coursesAndTreatments" xml:space="preserve">
+    <value>Kurser och behandlingar</value>
+  </data>
+  <data name="createBooking" xml:space="preserve">
+    <value>Boka en behandling eller kurs</value>
+  </data>
+  <data name="exciting" xml:space="preserve">
+    <value>Låter det spännande? Vad skulle hända om du bokar en tid?</value>
+  </data>
+  <data name="mtReview" xml:space="preserve">
+    <value>Efter dagar, kanske veckor av trötthet så kom Jesper lämpligt på besök:-), vi skulle byta Bars , men av någon underlig anledning började han att göra en massa clearingprocesser på mej om tröttheten.  Tillhör den mej?  Någon annans?  Eller är det kanske något annat?  Kommer inte riktigt ihåg allt, men med den finstämmighet och lyhördhet som Jesper besitter hittade han rätt ord och de gick rakt in "mitt i prick" som det ju heter!  Right on the spot!.  Vi bytte Bars och skildes åt. Dagen efter åkte jag iväg med ett par vänner, tröttheten som bortblåst, mitt egenvärde stärkt och livet så mycket lättare!  Därefter har jag inte känt av den kroniska tröttheten som jag gått och burit på i flera år.</value>
   </data>
   <data name="quotes" xml:space="preserve">
     <value>Citat</value>
@@ -131,6 +155,9 @@
   </data>
   <data name="welcome" xml:space="preserve">
     <value>Välkommen</value>
+  </data>
+  <data name="whatHappened" xml:space="preserve">
+    <value>Vad hände för dig under behandlingen och efter du fått en Access Bars:</value>
   </data>
   <data name="worldpeace" xml:space="preserve">
     <value>Världsfred</value>
